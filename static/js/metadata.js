@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
       var mostRecentEarthquake = features[0];
       document.getElementById("last-earthquake-date").innerText = formatDate(mostRecentEarthquake.properties.time);
       document.getElementById("last-updated").innerText = formatDate(data.metadata.generated);
-    });
+      document.getElementById("last-earthquake-location").innerText = mostRecentEarthquake.properties.place;
+  });
   
     function formatDate(timeInMillis) {
       var date = new Date(timeInMillis);
