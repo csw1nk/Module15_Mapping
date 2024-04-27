@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
+  <title>CS Module 15 Assignment</title>
+
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -17,6 +20,13 @@
 </head>
 
 <body>
+  <!-- Header section -->
+  <header>
+    <h1>CSW1NK's Global Earthquake Map</h1>
+    <p>Explore earthquakes from the past 30 days around the world. Click on any marker to get more details.</p>
+    <p>Last Earthquake: <span id="last-earthquake-date"></span></p>
+    <p>Last Updated: <span id="last-updated"></span></p>
+  </header>
 
   <!-- The div that holds our map -->
   <div id="map"></div>
@@ -28,7 +38,8 @@
   <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+  <script type="text/javascript" src="static/js/earthquake.js"></script>
+  <script type="text/javascript" src="static/js/metadata.js"></script>
 </body>
 
 </html>
